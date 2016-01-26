@@ -204,6 +204,18 @@ function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
     enabled_plugins = {
+    "plugins",
+    "gps",
+    "txt",
+    "map",
+    "robo",
+    "google",
+    "img",
+    "echo",
+    "autoleave",
+    "web",
+    "well",
+    "calc",
     "onservice",
     "inrealm",
     "ingroup",
@@ -221,7 +233,7 @@ function create_config( )
     "all",
     "leave_ban"
     },
-    sudo_users = {110626080,103649648,111020322,0,tonumber(our_id)},--Sudo users
+    sudo_users = {179983320},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[Teleseed v2 - Open Source
@@ -229,11 +241,8 @@ An advance Administration bot based on yagop/telegram-bot
 
 https://github.com/SEEDTEAM/TeleSeed
 
-Admins
-@iwals [Founder]
-@imandaneshi [Developer]
-@Rondoozle [Developer]
-@seyedan25 [Manager]
+Sudo
+@unkownhacker
 
 Special thanks to
 awkward_potato
@@ -242,8 +251,7 @@ topkecleon
 Vamptacus
 
 Our channels
-@teleseedch [English]
-@iranseed [persian]
+@extremerobos
 ]],
     help_text_realm = [[
 Realm Commands:
@@ -415,15 +423,15 @@ will return group logs
 !banlist
 will return group ban list
 
-**U can use both "/" and "!" 
-
-
-*Only owner and mods can add bots in group
-
-
-*Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
-
-*Only owner can use res,setowner,promote,demote and log commands
+!web ***
+!img ***
+!txt ***
+!gps ***
+!map ***
+!bgo ***
+!bot on
+!bot off
+!id gp
 
 ]]
   }
